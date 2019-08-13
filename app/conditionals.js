@@ -2,7 +2,7 @@
 
 function largerNum(num1, num2) {
     // you code here
-
+    return Math.max(num1, num2);
 }
 
 // 2. Given two numbers, amount correct and amount possible of a test, return the corresponding letter grade.
