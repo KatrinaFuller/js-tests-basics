@@ -14,8 +14,17 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
-    if (score == possible) {
+    let percent = score / possible * 100;
+    if (percent >= 90) {
         return "A";
+    } else if (percent >= 80 && percent <= 89) {
+        return "B";
+    } else if (percent >= 70 && percent <= 79) {
+        return "C";
+    } else if (percent >= 60 && percent <= 69) {
+        return "D";
+    } else {
+        return "F";
     }
 }
 
